@@ -9,7 +9,7 @@ const data = [
     city: "Aubervilliers",
     missions:
       "Communication avec les directeurs de production et équipes techniques. Négociation des devis de location du matériel et saisie dans le CRM. Suivi des projets et de la logistique du matériel en assurant un service client continu.",
-    image: `src/assets/PANAVISION.jpeg`,
+    image: `src\assets\PANAVISION.jpeg`,
   },
   {
     year: "2020-2021",
