@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+.container {
+    margin: 40px; /* Ajuste la marge extérieure */
+    padding: 20px; /* Ajoute de l'espace autour du contenu */
+}
+
+.passion-detail {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.timeline-section {
+  position: relative;
+  overflow: hidden;
+  transform: none;
+}
+
+.timeline-svg {
+  transform: none;
+  padding:10px;
+  width:100vw;
+  height:auto;
+}
+
+.background-container {
+  background: url('assets/space-galaxy-background.jpg') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  filter: grayscale(100%); /* Convertit l'image en nuances de gris */
+  animation: bgAnimation 60s infinite linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:auto;
+  min-height: 100%;
+  z-index: 1; /* Fond sous les planètes */
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.planets-container circle {
+  animation: rotate 5s linear infinite;
+  position : absolute;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(3px) rotate(0deg); /* Position initiale */
+  }
+  100% {
+    transform: rotate(360deg) translateX(3px) rotate(-360deg); /* Rotation complète */
+  }
+}
+
+@media (max-width: 640px) {
+  
+  .timeline-svg {
+    transform: rotate(90deg) scale(1.8);
+    transform-origin: center;
+    overflow: hidden;
+    padding:10px;
+    position: relative;
+    
+  }
+
+  .timeline-svg svg {
+    width: 105vw;
+    height: 130vh;
+    padding:10px;
+    overflow:hidden;
+  }
+
+  .timeline-svg text {
+    transform: rotate(-90deg) scale(1.4);
+    transform-origin: center center;
+    transform-box: fill-box;
+  }
+
+  .cursor-small {
+    width: 30px;
+    height: auto;
+  }
+}
