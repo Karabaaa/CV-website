@@ -39,7 +39,7 @@ export default function Portfolio() {
       <div className="flex flex-col md:flex-row items-between gap-8 ">
         {/* Carrousel */}
         <div className="flex flex-col flex-1 items-center gap-4">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center gap-4">
             {/* Bouton précédent */}
             <button
               onClick={handlePrev}
@@ -48,7 +48,7 @@ export default function Portfolio() {
               ←
             </button>
             {/* Image */}
-            <div className="w-f1/2 flex items-center justify-center overflow-hidden rounded-lg border border-gray-300 shadow-md">
+            <div className="w-[50%] flex items-center justify-center overflow-hidden rounded-lg border border-gray-300 shadow-md">
               <img
                 src={images[currentIndex].src}
                 alt={images[currentIndex].alt}

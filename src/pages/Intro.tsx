@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <motion.section
       id="home"
-      className="text-center p-10"
+      className="text-center p-10 mt-6"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
