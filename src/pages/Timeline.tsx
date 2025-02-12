@@ -104,7 +104,7 @@ export default function Timeline() {
                 patternUnits="objectBoundingBox"
               >
                 <image
-                  href="src\assets\Earth.jpg"
+                  href="/assets/Earth.jpg"
                   x="0"
                   y="0"
                   width="50"
@@ -120,7 +120,7 @@ export default function Timeline() {
                 patternUnits="objectBoundingBox"
               >
                 <image
-                  href="src\assets\lune.jpg"
+                  href="/assets/lune.jpg"
                   x="-11"
                   y="-11"
                   width="71"
@@ -136,7 +136,7 @@ export default function Timeline() {
                 patternUnits="objectBoundingBox"
               >
                 <image
-                  href="src\assets\Mars.png"
+                  href="/assets/Mars.png"
                   x="0"
                   y="0"
                   width="50"
@@ -152,7 +152,7 @@ export default function Timeline() {
                 patternUnits="objectBoundingBox"
               >
                 <image
-                  href="src\assets\Jupiter.png"
+                  href="/assets/Jupiter.png"
                   x="-1"
                   y="-1"
                   width="51"

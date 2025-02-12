@@ -17,7 +17,7 @@ const data = [
     company: "CINÉMA ELDORADO",
     city: "Dijon",
     missions: `Community management. Édition du programme des films à l’affiche. Accueil des spectateurs, gestion de la caisse et du lieu de vie. Organisation d’événements (festival Télérama, fête de l’Eldo, séances spéciales).`,
-    image: `src/assets/CINEMA-ELDORADO.jpg`,
+    image: `/assets/CINEMA-ELDORADO.jpg`,
   },
   {
     year: "2019",
@@ -26,7 +26,7 @@ const data = [
     city: "Bruxelles",
     missions:
       "Constitution de dossiers de financement. Analyse des opportunités de coproduction. Suivi opérationnel des films.",
-    image: `src/assets/UMEDIA.png`,
+    image: `/assets/UMEDIA.png`,
   },
   {
     year: "2019",
@@ -43,7 +43,7 @@ const data = [
     company: "RYDER CUP",
     city: "Guyancourt",
     missions: `Transmission et coordination de l’information entre prestataires et l’organisation. Actions pour la prévention et la protection du public et des employés sur site.`,
-    image: `src/assets/RYDER-CUP.jpeg`,
+    image: `/assets/RYDER-CUP.jpeg`,
   },
   {
     year: "2018",
@@ -52,7 +52,7 @@ const data = [
     city: "Paris",
     missions:
       "Prospection et soumission de films aux festivals. Négociation des tarifs de projection aux festivals et aux exploitants. Gestion du matériel audiovisuel, press kit, line-up et visuels à envoyer.",
-    image: `src/assets/WIDE.jpg`,
+    image: `/assets/WIDE.jpg`,
   },
   {
     year: "2016-2017",
@@ -61,7 +61,7 @@ const data = [
     city: "Boulogne-Billancourt",
     missions:
       "Conception, organisation et suivi de projets événementiels. Prospection, contact et négociation avec les prestataires.",
-    image: `src/assets/XLA.jpg`,
+    image: `/assets/XLA.jpg`,
   },
 ]
 

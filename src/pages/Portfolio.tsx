@@ -2,17 +2,17 @@ import { useState } from "react"
 
 const images = [
   {
-    src: "/src/assets/screen-lbc-1.png",
+    src: "/assets/screen-lbc-1.png",
     alt: "Première capture d'écran",
     caption: "modale connexion requise",
   },
   {
-    src: "/src/assets/screen-lbc-2.png",
+    src: "/assets/screen-lbc-2.png",
     alt: "Deuxième capture d'écran",
     caption: "bas de page, page 3",
   },
   {
-    src: "/src/assets/screen-lbc-3.png",
+    src: "/assets/screen-lbc-3.png",
     alt: "Troisième capture d'écran",
     caption: "page d'accueil",
   },

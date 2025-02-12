@@ -3,7 +3,7 @@ import SkillCard from "../components/SkillCard"
 const data = [
   {
     category: "Compétences Techniques",
-    image: "/src/assets/technical-skill-card.png",
+    image: "/assets/technical-skill-card.png",
     skills: [
       "JavaScript",
       "TypeScript",
@@ -27,7 +27,7 @@ const data = [
   },
   {
     category: "Compétences Humaines",
-    image: "/src/assets/human-skill-card.png",
+    image: "/assets/human-skill-card.png",
     skills: [
       "Anglais bilingue",
       "Esprit d'équipe",
@@ -38,7 +38,7 @@ const data = [
   },
   {
     category: "Compétences Organisationnelles",
-    image: "/src/assets/organisation-skill-card.png",
+    image: "/assets/organisation-skill-card.png",
     skills: [
       "Adaptabilité",
       "Fiable",
@@ -60,7 +60,7 @@ const allSkills = data.flatMap(({ image, skills, category }) =>
 const shuffledSkills = allSkills.sort(() => Math.random() - 0.5)
 
 // Image principale et backImages
-const frontImage = "src/assets/dungeon.png" // L'image principale
+const frontImage = "/assets/dungeon.png" // L'image principale
 
 // Dimensions de la grille
 const rows = 6

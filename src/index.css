@@ -25,7 +25,7 @@
 }
 
 .background-container {
-  background: url('assets/space-galaxy-background.jpg') no-repeat center center;
+  background: url('/assets/space-galaxy-background.jpg') no-repeat center center;
   background-size: cover;
   position: absolute;
   overflow: hidden;
