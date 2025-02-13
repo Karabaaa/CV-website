@@ -201,7 +201,7 @@ export default function Timeline() {
                     x={cx + -70} // Décale le texte à gauche du cercle
                     y={cy + 50}
                     textAnchor="start" // Aligne le texte à gauche
-                    fontSize="20"
+                    fontSize="20px"
                     fill="white"
                     fontWeight="bold"
                   >
