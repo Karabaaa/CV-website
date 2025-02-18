@@ -20,16 +20,12 @@ export default function ExperienceCard({
   onClose,
 }: ExperienceCardProps) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-51">
+    <div className="fixed inset-0 flex items-center justify-center z-51 m-3">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
-        className="absolute bg-white p-10 rounded-lg shadow-lg z-51 max-w-xl w-full "
-        style={{
-          width: "auto",
-          height: "auto",
-        }}
+        className="absolute bg-white p-5 rounded-lg shadow-lg z-51 h-auto m-auto "
       >
         <button
           onClick={onClose}
@@ -37,10 +33,12 @@ export default function ExperienceCard({
         >
           ✕
         </button>
-        <div className="aspect-w-0.5 aspect-h-0.5 mb-3 place-items-center">
-          <img src={image} alt={company} className="object-cover rounded-lg" />
-        </div>
         <div className="place-items-center">
+          <img
+            src={image}
+            alt={company}
+            className="object-cover rounded-md scale-75 "
+          />
           <h3 className="text-lg font-bold">{`${year} - ${company}`}</h3>
           <span className="my-15">
             <i>{city}</i>
