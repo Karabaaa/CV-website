@@ -20,21 +20,39 @@ export default function Contact() {
   }
 
   // Gestion de l'envoi du formulaire
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  // Gestion de l'envoi du formulaire
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    // Valider les champs avant l'envoi (optionnel)
     if (!formData.email || !formData.subject || !formData.message) {
       alert("Tous les champs doivent être remplis !")
       return
     }
 
-    // Simuler l'envoi des données
-    console.log("Données envoyées :", formData)
-    alert("Votre message a été envoyé !")
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}send-email`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      )
 
-    // Réinitialiser le formulaire
-    setFormData({ email: "", subject: "", message: "" })
+      const data = await response.json()
+
+      if (response.ok) {
+        alert("Votre message a été envoyé !")
+        setFormData({ email: "", subject: "", message: "" }) // Réinitialiser le formulaire
+      } else {
+        alert(`Erreur : ${data.error}`)
+      }
+    } catch (error) {
+      console.error("Erreur lors de l'envoi :", error)
+      alert("Erreur lors de l'envoi du message.")
+    }
   }
 
   return (
