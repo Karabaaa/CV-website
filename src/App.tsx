@@ -10,8 +10,6 @@ import Portfolio from "./pages/Portfolio"
 import Footer from "./pages/Footer"
 
 function App() {
-  console.log(import.meta.env.VITE_BACKEND_URL)
-
   return (
     <div>
       <NavBar />
