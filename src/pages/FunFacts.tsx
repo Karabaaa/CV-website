@@ -112,7 +112,7 @@ const FunFacts = () => {
   return (
     <section
       id="funfacts"
-      className="px-auto text-center flex flex-col items-center mx-auto bg-gray-800 text-white"
+      className="p-10 text-center flex flex-col items-center mx-auto bg-gray-800 text-white"
     >
       <h2 className="text-4xl font-bold my-16 px-4">
         Voici des fun facts sur moi
