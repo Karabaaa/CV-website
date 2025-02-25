@@ -22,6 +22,7 @@
   padding:10px;
   width:100vw;
   height:auto;
+
 }
 
 .background-container {
@@ -89,5 +90,18 @@
   .cursor-small {
     width: 30px;
     height: auto;
+  }
+}
+
+/* Style pour mobile */
+@media (max-width: 640px) {
+  .formation-card-mobile {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    border-radius: 0;
+    padding: 2rem;
   }
 }
