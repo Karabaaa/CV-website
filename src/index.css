@@ -1,4 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Tint&family=Honk&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Puddles&family=VT323&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  /*FONTS:*/
+  --font-honk:"Honk", serif;
+  --font-rubik-puddles:"Rubik Puddles", serif;
+  --font-orbitron:"Orbitron", serif;
+  --font-bangers: "Bangers", serif;
+  --font-bungee-tint: "Bungee Tint", serif;
+  --font-quicksand: "Quicksand", serif;
+  --font-vt323: "VT323", serif;
+  --font-pixel:"Press Start 2P";
+  --font-oswald: "Oswald";
+  --font-roboto-condensed:"Roboto Condensed";
+  --font-zilla-slab: "Zilla Slab";
+  /*COLORS*/
+  --color-oxford-blue: #05032B;
+  --color-vista-blue: #7F97D5;
+  --color-african-violet: #A872AC;
+  --color-aquamarine: #85FFDC;
+  --color-icterine: #FFFA74;
+}
+
+@font-face {
+  font-family: "Cosmic Space";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/CosmicSpace.ttf") format("truetype")
+}
+
+.font-cosmic-space {
+  font-family: "Cosmic Space";
+}
+
+@font-face {
+  font-family: "Giant Robots";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/GiantRobots.ttf") format("truetype")
+}
+
+.font-giant-robots {
+  font-family: "Giant Robots";
+}
+
+@font-face {
+  font-family: "Giant Robots Italic";
+  font-style: italic;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/GiantRobotsItalic.ttf") format("truetype")
+}
+
+.font-giant-robots-italic {
+  font-family: "Giant Robots Italic";
+}
+
+@font-face {
+  font-family: "Space Androids";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceAndroids.ttf") format("truetype")
+}
+
+.font-space-androids {
+  font-family: "Space Androids";
+}
+
+@font-face {
+  font-family: "Space Androids Italic";
+  font-style: italic;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceAndroidsItalic.ttf") format("truetype")
+}
+
+.font-space-androids-italic {
+  font-family: "Space Androids Italic";
+}
+
+@font-face {
+  font-family: "Space Cowboy";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceCowboy.ttf") format("truetype")
+}
+
+.font-space-cowboy {
+  font-family: "Space Cowboy";
+}
+
+@font-face {
+  font-family: "Space Crusaders";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceCrusaders.ttf") format("truetype")
+}
+
+.font-space-crusaders {
+  font-family: "Space Crusaders";
+}
+
+@font-face {
+  font-family: "Space Crusaders Italic";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceCrusadersItalic.ttf") format("truetype")
+}
+
+.font-space-crusaders-italic {
+  font-family: "Space Crusaders Italic";
+}
+
+@font-face {
+  font-family: "Space Garden";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceGarden.otf") format("opentype")
+}
+
+.font-space-garden {
+  font-family: "Space Garden";
+}
+
+@font-face {
+  font-family: "Space Mission";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceMission.otf") format("opentype")
+}
+
+.font-space-mission {
+  font-family: "Space Mission";
+}
+
+@font-face {
+  font-family: "Space Quest";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceQuest.ttf") format("truetype")
+}
+
+.font-space-quest {
+  font-family: "Space Quest";
+}
+
+@font-face {
+  font-family: "Space Quest Italic";
+  font-style: italic;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceQuestItalic.ttf") format("truetype")
+}
+
+.font-space-quest-italic {
+  font-family: "Space Quest Italic";
+}
+
+@font-face {
+  font-family: "Space Rave";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceRave.ttf") format("truetype")
+}
+
+.font-space-rave {
+  font-family: "Space Rave";
+}
+
+@font-face {
+  font-family: "Space Rave Italic";
+  font-style: italic;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceRaveItalic.ttf") format("truetype")
+}
+
+.font-space-rave-italic {
+  font-family: "Space Rave Italic";
+}
+
+@font-face {
+  font-family: "Space Shards";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceShards.ttf") format("truetype")
+}
+
+.font-space-shards {
+  font-family: "Space Shards";
+}
+
+@font-face {
+  font-family: "Space Shards Italic";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceShardsItalic.ttf") format("truetype")
+}
+
+.font-space-shards-italic {
+  font-family: "Space Shards Italic";
+}
+
+@font-face {
+  font-family: "Space Time Regular";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/SpaceTimeRegular.ttf") format("truetype")
+}
+
+.font-space-time-regular {
+  font-family: "Space Time Regular";
+}
+
+@font-face {
+  font-family: "Starjedi";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Starjedi.ttf") format("truetype")
+}
+
+.font-starjedi {
+  font-family: "Starjedi";
+}
+
+@font-face {
+  font-family: "Starjhol";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Starjhol.ttf") format("truetype")
+}
+
+.font-starjhol {
+  font-family: "Starjhol";
+}
+
+@font-face {
+  font-family: "Starjout";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Starjout.ttf") format("truetype")
+}
+
+.font-starjout {
+  font-family: "Starjout";
+}
+
+@font-face {
+  font-family: "STJEDISE";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/STJEDISE.ttf") format("truetype")
+}
+
+.font-stjedise {
+  font-family: "STJEDISE";
+}
+
+@font-face {
+  font-family: "Typewriter";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Typewriter.ttf") format("truetype")
+}
+
+.font-typewriter {
+  font-family: "Typewriter";
+}
+
+@font-face {
+  font-family: "Led";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Led.ttf") format("truetype")
+}
+
+.font-led {
+  font-family: "Led";
+}
+
+@font-face {
+  font-family: "Arcade";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Arcade.ttf") format("truetype")
+}
+
+.font-arcade {
+  font-family: "Arcade";
+}
+
+@font-face {
+  font-family: "1up";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/1up.ttf") format("truetype")
+}
+
+.font-1up {
+  font-family: "1up";
+}
+
+@font-face {
+  font-family: "Impact";
+  font-style: normal;
+  font-weight: 400; /* Ajoutez un poids par défaut */
+  src:
+    url("/src/assets/fonts/Impact.ttf") format("truetype")
+}
+
+.font-impact {
+  font-family: "Impact";
+}
+
+.paw-cursor {
+  cursor:url("/assets/paw-cursor.png") 16 16, auto;
+}
 
 .container {
     margin: 40px; /* Ajuste la marge extérieure */
@@ -28,7 +369,7 @@
 .background-container {
   background: url('/assets/space-galaxy-background.jpg') no-repeat center center;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   filter: grayscale(100%); /* Convertit l'image en nuances de gris */
   animation: bgAnimation 60s infinite linear;
@@ -37,7 +378,7 @@
   width: 100%;
   height:auto;
   min-height: 100%;
-  z-index: 1; /* Fond sous les planètes */
+  z-index: -1; /* Fond sous les planètes */
 }
 
 @keyframes bgAnimation {
@@ -104,4 +445,25 @@
     border-radius: 0;
     padding: 2rem;
   }
+}
+
+.text-stroke-african-violet {
+  -webkit-text-stroke: 0.5px #A872AC;
+}
+
+.bg-asfalt {
+  background-image: url('/assets/asfalt.png');
+  background-size: 200px 200px;
+  background-color: #a872acec;
+}
+
+.border-3d {
+  border-width: 6px;
+  border-color: #fffa74a2; /* Couleur principale */
+  box-shadow: 
+    0 0 0 2px var(--color-gray-500) inset, /* Ombre interne */
+    0 4px 0 var(--color-gray-500), /* Ombre en bas */
+    4px 0 0 var(--color-gray-500), /* Ombre à droite */
+    0 4px 0 var(--color-gray-900), /* Profondeur supplémentaire en bas */
+    4px 0 0 var(--color-gray-900); /* Profondeur supplémentaire à droite */
 }

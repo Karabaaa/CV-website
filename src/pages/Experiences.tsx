@@ -70,8 +70,8 @@ export default function Experiences() {
 
   return (
     <section id="experiences" className="bg-gray-100 p-10">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center my-16 mx-0 px-4">
-        Expériences professionnelles
+      <h2 className="text-3xl sm:text-4xl md:text-5xl  text-african-violet font-space-time-regular tracking-wider text-center my-8 sm:my-16 ">
+        Experiences professionnelles
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {data.map((_, index) => (

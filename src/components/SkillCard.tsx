@@ -30,7 +30,7 @@ export default function SkillCard({
     <motion.div
       className="relative w-32 h-32 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-36
       xl:h-36
-      perspective-1000  "
+      perspective-1000 "
       onClick={() => setFlipped(!flipped)}
     >
       <motion.div
@@ -41,7 +41,7 @@ export default function SkillCard({
         {/* Face avant : partie spécifique de l'image principale */}
         {!flipped && (
           <div
-            className="w-full h-full bg-cover bg-no-repeat rounded-lg border-gray-800 border-1 "
+            className="w-full h-full bg-cover bg-no-repeat rounded-lg border-gray-800 border-1 paw-cursor"
             style={{
               backgroundImage: `url(${frontImage})`,
               backgroundPosition: `${position.x} ${position.y}`,
@@ -53,7 +53,7 @@ export default function SkillCard({
         {/* Face arrière : compétence et image */}
         {flipped && (
           <div
-            className="w-full h-full bg-cover bg-no-repeat rounded-lg border-gray-800 border-1 rotate-y-180 flex items-end justify-center"
+            className="w-full h-full bg-cover bg-no-repeat rounded-lg border-gray-800 border-1 rotate-y-180 flex items-end justify-center paw-cursor"
             style={{
               backgroundImage: `url(${backImage})`,
             }}

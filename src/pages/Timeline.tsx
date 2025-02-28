@@ -1,6 +1,5 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { adjustCardPosition } from "../utils/positioningCard"
 import FormationCard from "../components/FormationCard"
 
 const data = [
@@ -30,10 +29,19 @@ const data = [
 
 export default function Timeline() {
   const [selected, setSelected] = useState<number | null>(null)
-  const [circlePosition, setCirclePosition] = useState<{
-    cx: number
-    cy: number
-  } | null>(null)
+
+  // Désactiver le scroll quand une modale est ouverte
+  useEffect(() => {
+    if (selected !== null) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+
+    return () => {
+      document.body.style.overflow = "auto" // Nettoyage
+    }
+  }, [selected])
 
   // IDs des patterns correspondant aux planètes
   const patternIds = [
@@ -43,38 +51,16 @@ export default function Timeline() {
     "jupiter-pattern",
   ]
 
-  const handleCircleClick = (cx: number, cy: number, index: number) => {
-    const cardWidth = 300 // Largeur de la carte définie dans FormationCard
-    const cardHeight = 200 // Hauteur approximative de la carte
-    const windowWidth = window.innerWidth // Largeur de la fenêtre
-    const windowHeight = window.innerHeight // Hauteur de la fenêtre
-    const padding = 20 // Marge autour des bords
-
-    // Utilise la fonction utilitaire pour ajuster la position
-    const { x, y } = adjustCardPosition(
-      cx,
-      cy,
-      cardWidth,
-      cardHeight,
-      windowWidth,
-      windowHeight,
-      padding
-    )
-
-    setCirclePosition({ cx: x, cy: y })
-    setSelected(index)
-  }
-
   return (
     <section
       id="formations"
-      className="flex flex-col justify-center items-center timeline-section p-10 "
+      className="flex flex-col justify-center items-center timeline-section p-10 cursor-crosshair "
     >
       <div className="background-container"></div>
       <div className=" w-full h-auto sm:max-w-fit z-3 relative planets-container">
         {/* Contenu de la timeline */}
 
-        <h2 className="text-4xl font-bold text-white text-center my-16 block ">
+        <h2 className="text-5xl font-bold text-white font-starjedi tracking-widest text-center my-16 block ">
           Formations
         </h2>
 
@@ -192,7 +178,7 @@ export default function Timeline() {
                       duration: 10,
                       ease: "linear",
                     }}
-                    onClick={() => handleCircleClick(cx, cy, index)}
+                    onClick={() => setSelected(index)}
                     className="cursor-pointer"
                   />
 
@@ -204,6 +190,7 @@ export default function Timeline() {
                     fontSize="20px"
                     fill="white"
                     fontWeight="bold"
+                    fontFamily="Orbitron"
                   >
                     {item.year}
                   </text>
@@ -215,15 +202,13 @@ export default function Timeline() {
       </div>
 
       {/* FormationCard Modal */}
-      {selected !== null && circlePosition && (
+      {selected !== null && (
         <FormationCard
           year={data[selected].year}
           diploma={data[selected].diploma}
           major={data[selected].major}
           school={data[selected].school}
           onClose={() => setSelected(null)}
-          cx={circlePosition.cx}
-          cy={circlePosition.cy}
         />
       )}
     </section>

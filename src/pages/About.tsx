@@ -9,8 +9,10 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h2 className="text-4xl font-bold my-16">À propos de moi</h2>
-      <div className="mt-4 text-lg text-justify px-6 lg:px-16">
+      <h2 className="text-4xl font-bold my-16 font-stjedise text-white">
+        À propos de moi
+      </h2>
+      <div className="mt-4 text-lg text-justify text-white font-orbitron px-6 lg:px-16">
         <p>
           Je m'appelle Amandine, j'ai bientôt 30 ans, et depuis 2024, je me suis
           reconvertie en développeuse web. Mon parcours atypique m’a conduite à

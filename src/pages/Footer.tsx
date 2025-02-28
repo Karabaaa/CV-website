@@ -2,7 +2,7 @@ import { FaPhone, FaHome, FaEnvelope, FaGithub } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white text-sm py-6">
+    <footer className="bg-african-violet text-white font-quicksand text-sm py-6">
       <div className=" mx-auto text-center">
         {/* Contact Info */}
         <ul className=" flex flex-col space-y-4 mx-auto">
@@ -39,7 +39,7 @@ export default function Footer() {
         </ul>
 
         {/* Copyright */}
-        <p className="mt-10 mb-2 text-gray-400 text-xs">
+        <p className="mt-10 mb-2 text-aquamarine text-sm">
           Site codé par Amandine Moigno © {new Date().getFullYear()}
         </p>
       </div>

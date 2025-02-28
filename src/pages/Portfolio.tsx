@@ -35,7 +35,9 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="bg-gray-100 p-10 place-items-center">
-      <h2 className="text-4xl font-bold text-center my-16">Mon portfolio</h2>
+      <h2 className="text-5xl font-bold text-african-violet font-space-time-regular tracking-wider text-center my-16 block">
+        Mon portfolio
+      </h2>
       <div className="flex flex-col md:flex-row items-between gap-8 ">
         {/* Carrousel */}
         <div className="flex flex-col flex-1 items-center gap-4">
@@ -43,7 +45,7 @@ export default function Portfolio() {
             {/* Bouton précédent */}
             <button
               onClick={handlePrev}
-              className="bg-gray-800 text-white p-3 rounded-lg shadow-md hover:bg-gray-700"
+              className="bg-gray-800 text-white p-3 rounded-lg shadow-md  cursor-pointer hover:bg-gray-700"
             >
               ←
             </button>
@@ -58,7 +60,7 @@ export default function Portfolio() {
             {/* Bouton suivant */}
             <button
               onClick={handleNext}
-              className="bg-gray-800 text-white p-3 rounded-lg shadow-md hover:bg-gray-700"
+              className="bg-gray-800 text-white p-3 rounded-lg shadow-md cursor-pointer hover:bg-gray-700"
             >
               →
             </button>

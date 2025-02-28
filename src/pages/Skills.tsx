@@ -83,9 +83,12 @@ export default function Skills() {
   return (
     <section
       id="competences"
-      className="bg-gray-800 text-white px-4 pt-12 pb-24 place-items-center"
+      className="text-white px-4 pt-12 pb-24 place-items-center"
     >
-      <h2 className="text-4xl font-bold text-center my-16">Mes Compétences</h2>
+      <div className="background-container"></div>
+      <h2 className="text-5xl font-bold text-white tracking-wider text-center my-16 block font-starjedi">
+        Mes Compétences
+      </h2>
       <div
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-0 md:mx-10 lg:mx-30 place-items-center m-auto"
         style={

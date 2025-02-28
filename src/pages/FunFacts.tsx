@@ -112,10 +112,11 @@ const FunFacts = () => {
   return (
     <section
       id="funfacts"
-      className="p-10 text-center flex flex-col items-center mx-auto bg-gray-800 text-white"
+      className="p-10 text-center flex flex-col items-center mx-auto text-white"
     >
-      <h2 className="text-4xl font-bold my-16 px-4">
-        Voici des fun facts sur moi
+      <div className="background-container"></div>
+      <h2 className="text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
+        Fun facts
       </h2>
 
       <div className="relative w-[80vw] h-[80vw] sm:w-[60vw] sm:h-[60vw] lg:w-[40vw] lg:h-[40vw] mx-auto ">

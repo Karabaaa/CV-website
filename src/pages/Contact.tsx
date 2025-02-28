@@ -56,8 +56,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-gray-100 p-10">
-      <h2 className="text-3xl font-bold text-center my-16">Contactez-moi</h2>
+    <section id="contact" className="bg-icterine p-10">
+      <h2 className="text-5xl font-bold text-aquamarine font-space-time-regular tracking-wider text-center my-16 block text-stroke-african-violet">
+        Contactez-moi
+      </h2>
       <form
         onSubmit={handleSubmit}
         className="max-w-lg mx-auto bg-white p-6 shadow-md rounded-lg"
