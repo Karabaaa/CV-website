@@ -51,9 +51,9 @@ export default function NavBar() {
         }`}
       >
         {/* ANCIEN LAYOUT: md:block md:mb-2 md:bg-none md:font-quicksand uppercase md:text-sm md:text-white font-bold*/}
-        <ul className="flex flex-col space-y-4 font-stjedise">
+        <div className="flex flex-col space-y-4 font-stjedise">
           {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
-          <li
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -63,8 +63,8 @@ export default function NavBar() {
             >
               À propos
             </a>
-          </li>
-          <li
+          </p>
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -74,8 +74,8 @@ export default function NavBar() {
             >
               Formations
             </a>
-          </li>
-          <li
+          </p>
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -85,8 +85,8 @@ export default function NavBar() {
             >
               Expériences
             </a>
-          </li>
-          <li
+          </p>
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -96,8 +96,8 @@ export default function NavBar() {
             >
               Compétences
             </a>
-          </li>
-          <li
+          </p>
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -107,8 +107,8 @@ export default function NavBar() {
             >
               Portfolio
             </a>
-          </li>
-          <li
+          </p>
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -118,8 +118,8 @@ export default function NavBar() {
             >
               Fun Facts
             </a>
-          </li>
-          <li
+          </p>
+          <p
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -129,8 +129,8 @@ export default function NavBar() {
             >
               Contact
             </a>
-          </li>
-        </ul>
+          </p>
+        </div>
       </nav>
     </header>
   )
