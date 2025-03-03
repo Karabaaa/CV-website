@@ -51,7 +51,7 @@ export default function NavBar() {
         }`}
       >
         {/* ANCIEN LAYOUT: md:block md:mb-2 md:bg-none md:font-quicksand uppercase md:text-sm md:text-white font-bold*/}
-        <ul className="flex flex-col space-y-4">
+        <ul className="flex flex-col space-y-4 font-stjedise">
           {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
           <li
             className="py-3 md:py-0"
