@@ -1,5 +1,5 @@
 import NavBar from "./pages/NavBar"
-import Intro from "./pages/Intro"
+/*import Intro from "./pages/Intro"*/
 import About from "./pages/About"
 import Timeline from "./pages/Timeline"
 import Experiences from "./pages/Experiences"
@@ -14,7 +14,7 @@ function App() {
     <div>
       <NavBar />
       <main className="pt-20">
-        <Intro />
+        {/*<Intro />*/}
         <About />
         <Timeline />
         <Experiences />

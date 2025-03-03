@@ -1,4 +1,6 @@
 import SkillCard from "../components/SkillCard"
+import { useEffect } from "react"
+import { gsap } from "gsap"
 
 const data = [
   {
@@ -79,18 +81,71 @@ for (let row = 0; row < rows; row++) {
   }
 }
 
+// Positions et orientations des empreintes définies manuellement
+const customCatFootprints = [
+  { left: "10%", top: "50%", rotation: 50 },
+  { left: "15%", top: "45%", rotation: 20 },
+  { left: "25%", top: "45%", rotation: 70 },
+  { left: "35%", top: "45%", rotation: 75 },
+  { left: "45%", top: "50%", rotation: 80 },
+  { left: "55%", top: "48%", rotation: 40 },
+  { left: "65%", top: "45%", rotation: 20 },
+  { left: "70%", top: "40%", rotation: -20 },
+  { left: "68%", top: "35%", rotation: -30 },
+  { left: "65%", top: "30%", rotation: -20 },
+  { left: "65%", top: "25%", rotation: 10 },
+  { left: "70%", top: "20%", rotation: 20 },
+  { left: "75%", top: "15%", rotation: 20 },
+  { left: "80%", top: "10%", rotation: 30 },
+  { left: "85%", top: "5%", rotation: 20 },
+  { left: "90%", top: "0%", rotation: 30 },
+]
+
 export default function Skills() {
+  useEffect(() => {
+    const footprints = document.querySelectorAll(".cat-footprint")
+
+    const animateFootprints = () => {
+      footprints.forEach((footprint, index) => {
+        gsap.fromTo(
+          footprint,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 1,
+            delay: index * 0.5, // Délai progressif pour chaque empreinte
+            onComplete: () => {
+              // Faire disparaître l'empreinte après un certain temps
+              gsap.to(footprint, { opacity: 0, duration: 1, delay: 3 })
+            },
+          }
+        )
+      })
+
+      // Répéter l'animation après un délai
+      timeoutId = setTimeout(animateFootprints, 15000) // Répéter toutes les 15 secondes
+    }
+
+    let timeoutId: number // Déclare une variable pour stocker l'ID du timeout
+
+    // Lancer l'animation au premier rendu
+    animateFootprints()
+
+    // Nettoyer le timeout au démontage du composant
+    return () => clearTimeout(timeoutId)
+  }, [])
+
   return (
     <section
       id="competences"
       className="text-white px-4 pt-12 pb-24 place-items-center"
     >
       <div className="background-container"></div>
-      <h2 className="text-5xl font-bold text-white tracking-wider text-center my-16 block font-starjedi">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-wider text-center my-16 block font-starjedi">
         Mes Compétences
       </h2>
       <div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-0 md:mx-10 lg:mx-30 place-items-center m-auto"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-0 md:mx-10 lg:mx-30 place-items-center m-auto relative"
         style={
           window.innerWidth >= 640 // Vérifie si l'écran est `sm` ou plus large
             ? {
@@ -116,6 +171,25 @@ export default function Skills() {
             />
           )
         })}
+        {/* Empreintes de pas de chat */}
+        {customCatFootprints.map((footprint, index) => (
+          <div
+            key={index}
+            className="cat-footprint absolute"
+            style={{
+              position: "absolute",
+              left: footprint.left,
+              top: footprint.top,
+              backgroundImage: `url(/assets/cat-paws.png)`,
+              backgroundSize: "contain",
+              width: "64px",
+              height: "64px",
+              opacity: 0, // Pour l'animation fade-in
+              transform: `rotate(${footprint.rotation}deg)`,
+              filter: `invert(30%) sepia(70%) saturate(500%) hue-rotate(240deg)`, // Violet
+            }}
+          />
+        ))}
       </div>
     </section>
   )

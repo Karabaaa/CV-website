@@ -39,8 +39,8 @@ const funFactsList = [
       `Trois films qui m'ont marquées : "Pororoca" de Constantin Popescu, "So long, my son" de Wang Xiaoshuai et "Un grand voyage vers la nuit" de Bi Gan `,
       "Je suis fan de Denis Villeneuve pour son génie du grandiose.",
       "Je suis fan de Stanley Kubrick pour sa mise en scène.",
-      "Je suis fan de Paolo Sorrentino et de Eric Rhomer pour leur réflexions existentielles.",
-      "J'adore le cinéma de Yorgos Lanthimos et de Ruben Östlund pour ce qu'il révèle sur les paradoxes et la noirceur chez l'humain.",
+      "Je suis fan de Paolo Sorrentino et de Eric Rhomer pour leurs réflexions existentielles.",
+      "J'adore le cinéma de Yorgos Lanthimos et de Ruben Östlund pour ce qu'il révèle sur les paradoxes et la noirceur de l'humain.",
       "J'adore Ken Loach pour son humanisme.",
       "Je suis tombée amoureuse du cinéma contemplatif de Kiarostami.",
     ],
@@ -48,7 +48,7 @@ const funFactsList = [
   {
     category: "Musique",
     funFact: [
-      "Grâce au covid, je me suis mise à apprendre à jouer du piano.",
+      "Grâce au covid, j'ai commencé à jouer du piano.",
       "Je suis allée voir Charlotte Cardin et James Blake en concert dernièrement.",
       `Mon dernier coup de coeur musical, le groupe allemand "Oehl".`,
     ],
@@ -115,10 +115,19 @@ const FunFacts = () => {
       className="p-10 text-center flex flex-col items-center mx-auto text-white"
     >
       <div className="background-container"></div>
-      <h2 className="text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
         Fun facts
       </h2>
-
+      {/* Bouton pour tourner */}
+      <motion.button
+        onClick={handleSpin}
+        disabled={isSpinning}
+        className="relative inline-block px-6 py-3 mt-6 mb-6 text-lg md:text-xl font-bold text-white uppercase bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-full cursor-pointer transition-transform transform hover:scale-110 focus:outline-none"
+        whileHover={{ scale: 1.1 }}
+      >
+        <span className="absolute inset-0 border-4 border-white rounded-full animate-pulse"></span>
+        <span className="relative z-10 font-oswald">Tournez la roue !</span>
+      </motion.button>
       <div className="relative w-[80vw] h-[80vw] sm:w-[60vw] sm:h-[60vw] lg:w-[40vw] lg:h-[40vw] mx-auto ">
         {/* Curseur fixe */}
         <div
@@ -172,7 +181,8 @@ const FunFacts = () => {
             return (
               <div
                 key={item.category}
-                className="absolute text-centertext-base md:text-xl font-semibold"
+                className="absolute text-center 
+              text-base md:text-xl font orbitron font-semibold"
                 style={{
                   transform:
                     window.innerWidth >= 640 // Vérifie si l'écran est `sm` ou plus large
@@ -197,27 +207,21 @@ const FunFacts = () => {
         </motion.div>
       </div>
 
-      {/* Bouton pour tourner */}
-      <motion.button
-        onClick={handleSpin}
-        disabled={isSpinning}
-        className="mt-6 bg-blue-500 text-white py-2 px-4 mb-6 rounded cursor-pointer transition-transform transform hover:scale-110"
-        whileHover={{ scale: 1.1 }}
-      >
-        Tournez la roue !
-      </motion.button>
-
       {/* Affichage du fun fact */}
       {selectedFunFact && (
-        <div className="passion-detail bg-white mx-12 mb-16 p-6 rounded-lg shadow-lg border-gray-800">
-          <h3 className="text-lg font-bold">{selectedFunFact.category}</h3>
-          <p className="text-md">
-            {
-              selectedFunFact.funFact[
-                Math.floor(Math.random() * selectedFunFact.funFact.length)
-              ]
-            }
-          </p>
+        <div className="relative bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500  mx-12 mb-6 p-6 rounded-lg shadow-lg border-4 border-white mt-6 max-w-[80%]">
+          <div className="relative z-10">
+            <h3 className="text-xl md:text-2xl text-white uppercase font-1up mb-4">
+              {selectedFunFact.category}
+            </h3>
+            <p className="sm:text-md  md:text-lg font-quicksand text-white ">
+              {
+                selectedFunFact.funFact[
+                  Math.floor(Math.random() * selectedFunFact.funFact.length)
+                ]
+              }
+            </p>
+          </div>
         </div>
       )}
     </section>

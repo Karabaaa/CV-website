@@ -35,7 +35,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="bg-gray-100 p-10 place-items-center">
-      <h2 className="text-5xl font-bold text-african-violet font-space-time-regular tracking-wider text-center my-16 block">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-african-violet font-space-time-regular tracking-wider text-center my-16 block">
         Mon portfolio
       </h2>
       <div className="flex flex-col md:flex-row items-between gap-8 ">

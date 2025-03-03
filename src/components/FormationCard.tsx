@@ -16,15 +16,14 @@ export default function FormationCard({
   onClose,
 }: FormationCardProps) {
   return (
-    <div className="absolute z-3">
+    <div className="absolute md:relative z-3 mb-4 h-full flex justify-center items-center p-auto  md:block md:place-items-center">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
-        className="relative p-4 bg-asfalt rounded-lg max-w-full border-3d"
+        className="relative p-4 bg-asfalt rounded-lg border-3d
+        w-[90%] max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
         style={{
-          width: "90%", // Par défaut, la modale prend 90% de la largeur
-          maxWidth: "400px", // Largeur maximale sur les écrans plus grands
           transform: "translate(-50%, -50%)",
         }}
       >
@@ -34,14 +33,20 @@ export default function FormationCard({
         >
           ✕
         </button>
-        <h3 className="text-3xl font-1up text-aquamarine mb-4 border-b-2 border-aquamarine pb-2">
+        <h3 className="text-3xl md:text-4xl xl:text-5xl font-1up text-aquamarine mb-4 border-b-2 border-aquamarine pb-2">
           {year}
         </h3>
-        <p className="text-lg font-led text-white mb-2">{diploma}</p>
+        <p className="text-lg md:text-xl xl:text-2xl  font-led text-white mb-2">
+          {diploma}
+        </p>
         {major && (
-          <p className="text-md font-orbitron text-white mb-2">{major}</p>
+          <p className="text-md md:text-lg xl:text-xl font-orbitron text-white mb-2">
+            {major}
+          </p>
         )}
-        <p className="text-md font-oswald text-oxford-blue mb-2">{school}</p>
+        <p className="text-md md:text-lg xl:text-xl font-oswald text-oxford-blue mb-2">
+          {school}
+        </p>
       </motion.div>
     </div>
   )

@@ -1,28 +1,44 @@
 import { useState } from "react"
 import { FiMenu, FiX } from "react-icons/fi"
+import ContactButton from "../components/ContactButton"
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-oxford-blue text-white border-b-6 border-vista-blue shadow-md fixed top-0 left-0 w-full z-10">
-      <div className="flex flex-row items-center justify-between p-6 mx-auto">
+    <header className="bg-gradient-to-r from-blue-950 to-teal-700  text-white shadow-[0_4px_6px_3px_rgba(0,0,0,0.5)] fixed top-0 left-0 w-full z-20">
+      <div className="w-full flex flex-row items-center justify-around p-6 mx-auto">
         {/* Menu Toggle Button (visible sur mobile) */}
         <button
-          className="md:hidden"
+          /*className="md:hidden"*/
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
-            <FiX className="w-8 h-8 text-white" />
+            <FiX className="w-8 h-8 text-white cursor-pointer" />
           ) : (
-            <FiMenu className="w-8 h-8 text-white" />
+            <FiMenu className="w-8 h-8 text-white cursor-pointer" />
           )}
         </button>
         {/* Logo */}
-        <div className="md:w-full md:flex md:flex-row md:justify-center">
-          <h1 className="text-2xl font-bold hover:text-gray-300 ">
-            Amandine Moigno
-          </h1>
+        <div className="flex justify-center items-center gap-x-2">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-lg sm:text-2xl md:text-3xl font-bold font-space-time-regular mb-2  ">
+              Amandine Moigno
+            </h1>
+            <h2 className=" text-base sm:text-lg md:text-xl font-orbitron">
+              Web developer
+            </h2>
+          </div>
+          <span>
+            <img
+              src="/assets/cat-astronaut-1.png"
+              alt="cat astronaut"
+              className="h-20"
+            />
+          </span>
+        </div>
+        <div className="hidden sm:flex sm:items-center sm:justify-center">
+          <ContactButton />
         </div>
       </div>
 
@@ -30,43 +46,87 @@ export default function NavBar() {
       <nav
         className={`${
           isMenuOpen
-            ? "block fixed text-left transition-all duration-300 ease-in-out rounded-2xl bg-vista-blue border-oxford-blue border-4 w-full h-auto font-bangers text-icterine text-3xl underline"
+            ? "block fixed text-left p-6 transition-all duration-300 ease-in-out rounded-2xl bg-gray-100 border-blue-950 border-4 w-full sm:w-1/2 md:w-1/4 h-auto font-stjedise text-blue-950 text-2xl overflow-y-auto max-h-screen pb-10"
             : "hidden"
-        }  md:block md:mb-2 bg-oxford-blue md:font-orbitron md:text-sm md:text-white`}
+        }`}
       >
-        <ul className="flex flex-col md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center">
-          <li className="py-3 md:py-0">
-            <a href="#about" className="hover:text-gray-300">
+        {/* ANCIEN LAYOUT: md:block md:mb-2 md:bg-none md:font-quicksand uppercase md:text-sm md:text-white font-bold*/}
+        <ul className="flex flex-col space-y-4">
+          {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#about"
+              className="hover:text-african-violet hover:underline"
+            >
               À propos
             </a>
           </li>
-          <li className="py-3 md:py-0">
-            <a href="#formations" className="hover:text-gray-300">
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#formations"
+              className="hover:text-african-violet hover:underline"
+            >
               Formations
             </a>
           </li>
-          <li className="py-3 md:py-0">
-            <a href="#experiences" className="hover:text-gray-300">
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#experiences"
+              className="hover:text-african-violet hover:underline"
+            >
               Expériences
             </a>
           </li>
-          <li className="py-3 md:py-0">
-            <a href="#competences" className="hover:text-gray-300">
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#competences"
+              className="hover:text-african-violet hover:underline"
+            >
               Compétences
             </a>
           </li>
-          <li className="py-3 md:py-0">
-            <a href="#portfolio" className="hover:text-gray-300">
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#portfolio"
+              className="hover:text-african-violet hover:underline"
+            >
               Portfolio
             </a>
           </li>
-          <li className="py-3 md:py-0">
-            <a href="#funfacts" className="hover:text-gray-300">
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#funfacts"
+              className="hover:text-african-violet hover:underline"
+            >
               Fun Facts
             </a>
           </li>
-          <li className="py-3 md:py-0">
-            <a href="#contact" className="hover:text-gray-300">
+          <li
+            className="py-3 md:py-0"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <a
+              href="#contact"
+              className="hover:text-african-violet hover:underline"
+            >
               Contact
             </a>
           </li>
