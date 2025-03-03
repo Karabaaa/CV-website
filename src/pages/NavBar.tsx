@@ -54,7 +54,7 @@ export default function NavBar() {
         <ul className="flex flex-col space-y-4 font-stjedise">
           {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
@@ -65,7 +65,7 @@ export default function NavBar() {
             </a>
           </li>
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
@@ -76,7 +76,7 @@ export default function NavBar() {
             </a>
           </li>
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
@@ -87,7 +87,7 @@ export default function NavBar() {
             </a>
           </li>
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
@@ -98,7 +98,7 @@ export default function NavBar() {
             </a>
           </li>
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
@@ -109,7 +109,7 @@ export default function NavBar() {
             </a>
           </li>
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
@@ -120,7 +120,7 @@ export default function NavBar() {
             </a>
           </li>
           <li
-            className="py-3 md:py-0"
+            className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a
