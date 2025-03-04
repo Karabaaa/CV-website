@@ -37,89 +37,6 @@
   font-family: "Cosmic Space";
 }
 
-@font-face {
-  font-family: "Giant Robots";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/GiantRobots.ttf") format("truetype")
-}
-
-.font-giant-robots {
-  font-family: "Giant Robots";
-}
-
-@font-face {
-  font-family: "Giant Robots Italic";
-  font-style: italic;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/GiantRobotsItalic.ttf") format("truetype")
-}
-
-.font-giant-robots-italic {
-  font-family: "Giant Robots Italic";
-}
-
-@font-face {
-  font-family: "Space Androids";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceAndroids.ttf") format("truetype")
-}
-
-.font-space-androids {
-  font-family: "Space Androids";
-}
-
-@font-face {
-  font-family: "Space Androids Italic";
-  font-style: italic;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceAndroidsItalic.ttf") format("truetype")
-}
-
-.font-space-androids-italic {
-  font-family: "Space Androids Italic";
-}
-
-@font-face {
-  font-family: "Space Cowboy";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceCowboy.ttf") format("truetype")
-}
-
-.font-space-cowboy {
-  font-family: "Space Cowboy";
-}
-
-@font-face {
-  font-family: "Space Crusaders";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceCrusaders.ttf") format("truetype")
-}
-
-.font-space-crusaders {
-  font-family: "Space Crusaders";
-}
-
-@font-face {
-  font-family: "Space Crusaders Italic";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceCrusadersItalic.ttf") format("truetype")
-}
-
-.font-space-crusaders-italic {
-  font-family: "Space Crusaders Italic";
-}
 
 @font-face {
   font-family: "Space Garden";
@@ -131,90 +48,6 @@
 
 .font-space-garden {
   font-family: "Space Garden";
-}
-
-@font-face {
-  font-family: "Space Mission";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceMission.otf") format("opentype")
-}
-
-.font-space-mission {
-  font-family: "Space Mission";
-}
-
-@font-face {
-  font-family: "Space Quest";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceQuest.ttf") format("truetype")
-}
-
-.font-space-quest {
-  font-family: "Space Quest";
-}
-
-@font-face {
-  font-family: "Space Quest Italic";
-  font-style: italic;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceQuestItalic.ttf") format("truetype")
-}
-
-.font-space-quest-italic {
-  font-family: "Space Quest Italic";
-}
-
-@font-face {
-  font-family: "Space Rave";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceRave.ttf") format("truetype")
-}
-
-.font-space-rave {
-  font-family: "Space Rave";
-}
-
-@font-face {
-  font-family: "Space Rave Italic";
-  font-style: italic;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceRaveItalic.ttf") format("truetype")
-}
-
-.font-space-rave-italic {
-  font-family: "Space Rave Italic";
-}
-
-@font-face {
-  font-family: "Space Shards";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceShards.ttf") format("truetype")
-}
-
-.font-space-shards {
-  font-family: "Space Shards";
-}
-
-@font-face {
-  font-family: "Space Shards Italic";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/SpaceShardsItalic.ttf") format("truetype")
-}
-
-.font-space-shards-italic {
-  font-family: "Space Shards Italic";
 }
 
 @font-face {
@@ -278,18 +111,6 @@
 }
 
 @font-face {
-  font-family: "Typewriter";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/Typewriter.ttf") format("truetype")
-}
-
-.font-typewriter {
-  font-family: "Typewriter";
-}
-
-@font-face {
   font-family: "Led";
   font-style: normal;
   font-weight: 400; /* Ajoutez un poids par défaut */
@@ -299,18 +120,6 @@
 
 .font-led {
   font-family: "Led";
-}
-
-@font-face {
-  font-family: "Arcade";
-  font-style: normal;
-  font-weight: 400; /* Ajoutez un poids par défaut */
-  src:
-    url("/src/assets/fonts/Arcade.ttf") format("truetype")
-}
-
-.font-arcade {
-  font-family: "Arcade";
 }
 
 @font-face {
@@ -447,20 +256,10 @@
   }
 }
 
-.text-stroke-african-violet {
-  -webkit-text-stroke: 0.5px white;
-}
-
 .bg-asfalt {
   background-image: url('/assets/asfalt.png');
   background-size: 200px 200px;
   background-color: #a872acec;
-}
-
-.bg-asfalt-icterine {
-  background-image: url('/assets/asfalt.png');
-  background-size: 200px 200px;
-  background-color: #a872aca9;
 }
 
 .border-3d {

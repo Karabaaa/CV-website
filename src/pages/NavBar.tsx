@@ -5,27 +5,35 @@ import ContactButton from "../components/ContactButton"
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const navLinks = [
+    { name: "À propos", href: "#about" },
+    { name: "Formations", href: "#formations" },
+    { name: "Expériences", href: "#experiences" },
+    { name: "Compétences", href: "#competences" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Fun Facts", href: "#funfacts" },
+    { name: "Contact", href: "#contact" },
+  ]
+
   return (
-    <header className="bg-gradient-to-r from-blue-950 to-teal-700  text-white shadow-[0_4px_6px_3px_rgba(0,0,0,0.5)] fixed top-0 left-0 w-full z-20">
+    <header className="bg-gradient-to-r from-blue-950 to-teal-700 text-white shadow-[0_4px_6px_3px_rgba(0,0,0,0.5)] fixed top-0 left-0 w-full z-20">
       <div className="w-full flex flex-row items-center justify-around p-6 mx-auto">
         {/* Menu Toggle Button (visible sur mobile) */}
-        <button
-          /*className="md:hidden"*/
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
             <FiX className="w-8 h-8 text-white cursor-pointer" />
           ) : (
             <FiMenu className="w-8 h-8 text-white cursor-pointer" />
           )}
         </button>
+
         {/* Logo */}
         <div className="flex justify-center items-center gap-x-2">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-lg sm:text-2xl md:text-3xl font-bold font-space-time-regular mb-2  ">
+            <h1 className="text-lg sm:text-2xl md:text-3xl font-bold font-space-time-regular mb-2">
               Amandine Moigno
             </h1>
-            <h2 className=" text-base sm:text-lg md:text-xl font-orbitron">
+            <h2 className="text-base sm:text-lg md:text-xl font-orbitron">
               Web developer
             </h2>
           </div>
@@ -37,6 +45,7 @@ export default function NavBar() {
             />
           </span>
         </div>
+
         <div className="hidden sm:flex sm:items-center sm:justify-center">
           <ContactButton />
         </div>
@@ -50,86 +59,21 @@ export default function NavBar() {
             : "hidden"
         }`}
       >
-        {/* ANCIEN LAYOUT: md:block md:mb-2 md:bg-none md:font-quicksand uppercase md:text-sm md:text-white font-bold*/}
         <div className="flex flex-col space-y-4">
-          {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#about"
-              className="hover:text-african-violet hover:underline"
+          {navLinks.map(({ name, href }) => (
+            <h3
+              key={name}
+              className="font-stjedise py-3 md:py-0"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              À propos
-            </a>
-          </h3>
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#formations"
-              className="hover:text-african-violet hover:underline"
-            >
-              Formations
-            </a>
-          </h3>
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#experiences"
-              className="hover:text-african-violet hover:underline"
-            >
-              Expériences
-            </a>
-          </h3>
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#competences"
-              className="hover:text-african-violet hover:underline"
-            >
-              Compétences
-            </a>
-          </h3>
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#portfolio"
-              className="hover:text-african-violet hover:underline"
-            >
-              Portfolio
-            </a>
-          </h3>
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#funfacts"
-              className="hover:text-african-violet hover:underline"
-            >
-              Fun Facts
-            </a>
-          </h3>
-          <h3
-            className="font-stjedise py-3 md:py-0"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <a
-              href="#contact"
-              className="hover:text-african-violet hover:underline"
-            >
-              Contact
-            </a>
-          </h3>
+              <a
+                href={href}
+                className="hover:text-african-violet hover:underline"
+              >
+                {name}
+              </a>
+            </h3>
+          ))}
         </div>
       </div>
     </header>
