@@ -53,7 +53,7 @@ export default function NavBar() {
         {/* ANCIEN LAYOUT: md:block md:mb-2 md:bg-none md:font-quicksand uppercase md:text-sm md:text-white font-bold*/}
         <div className="flex flex-col space-y-4 font-stjedise">
           {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
-          <p
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -63,8 +63,8 @@ export default function NavBar() {
             >
               À propos
             </a>
-          </p>
-          <p
+          </h3>
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -74,8 +74,8 @@ export default function NavBar() {
             >
               Formations
             </a>
-          </p>
-          <p
+          </h3>
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -85,8 +85,8 @@ export default function NavBar() {
             >
               Expériences
             </a>
-          </p>
-          <p
+          </h3>
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -96,8 +96,8 @@ export default function NavBar() {
             >
               Compétences
             </a>
-          </p>
-          <p
+          </h3>
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -107,8 +107,8 @@ export default function NavBar() {
             >
               Portfolio
             </a>
-          </p>
-          <p
+          </h3>
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -118,8 +118,8 @@ export default function NavBar() {
             >
               Fun Facts
             </a>
-          </p>
-          <p
+          </h3>
+          <h3
             className="font-stjedise py-3 md:py-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -129,7 +129,7 @@ export default function NavBar() {
             >
               Contact
             </a>
-          </p>
+          </h3>
         </div>
       </nav>
     </header>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
+import ContactButton from "../components/ContactButton"
 
 const content = [
   {
@@ -48,6 +49,9 @@ export default function About() {
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
         À propos de moi
       </h2>
+      <div className=" px-6 pb-12 flex items-center justify-center sm:hidden ">
+        <ContactButton />
+      </div>
       <div
         className={`grid gap-6 ${
           activeIndex === null
