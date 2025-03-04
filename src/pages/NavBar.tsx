@@ -46,12 +46,12 @@ export default function NavBar() {
       <nav
         className={`${
           isMenuOpen
-            ? "block fixed text-left p-6 transition-all duration-300 ease-in-out rounded-2xl bg-gray-100 border-blue-950 border-4 w-full sm:w-1/2 md:w-1/4 h-auto font-stjedise text-blue-950 text-2xl overflow-y-auto max-h-screen pb-10"
+            ? "block fixed text-left p-6 transition-all duration-300 ease-in-out rounded-2xl bg-gray-100 border-blue-950 border-4 w-full sm:w-1/2 md:w-1/4 h-auto text-blue-950 text-2xl overflow-y-auto max-h-screen pb-10"
             : "hidden"
         }`}
       >
         {/* ANCIEN LAYOUT: md:block md:mb-2 md:bg-none md:font-quicksand uppercase md:text-sm md:text-white font-bold*/}
-        <div className="flex flex-col space-y-4 font-stjedise">
+        <div className="flex flex-col space-y-4">
           {/* ANCIEN LAYOUT : md:flex-row md:space-x-4 px-6 md:py-0 md:justify-center*/}
           <h3
             className="font-stjedise py-3 md:py-0"
