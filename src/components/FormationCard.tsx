@@ -16,13 +16,13 @@ export default function FormationCard({
   onClose,
 }: FormationCardProps) {
   return (
-    <div className="absolute md:relative z-3 mb-4 h-full flex justify-center items-center p-auto  md:block md:place-items-center">
+    <div className="relative z-3 mb-4 h-full p-auto block place-items-center">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
         className="relative p-4 bg-asfalt rounded-lg border-3d
-        w-[90%] max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+       w-auto max-w-[90%] lg:max-w-xl xl:max-w-2xl h-auto max-h-[90%]"
         style={{
           transform: "translate(-50%, -50%)",
         }}
