@@ -43,7 +43,7 @@ export default function NavBar() {
       </div>
 
       {/* Navigation Links */}
-      <nav
+      <div
         className={`${
           isMenuOpen
             ? "block fixed text-left p-6 transition-all duration-300 ease-in-out rounded-2xl bg-gray-100 border-blue-950 border-4 w-full sm:w-1/2 md:w-1/4 h-auto text-blue-950 text-2xl overflow-y-auto max-h-screen pb-10"
@@ -131,7 +131,7 @@ export default function NavBar() {
             </a>
           </h3>
         </div>
-      </nav>
+      </div>
     </header>
   )
 }
