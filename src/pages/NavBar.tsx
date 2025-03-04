@@ -63,7 +63,7 @@ export default function NavBar() {
           {navLinks.map(({ name, href }) => (
             <h3
               key={name}
-              className="font-stjedise py-3 md:py-0"
+              className="font-orbitron font-bold py-3 md:py-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <a
