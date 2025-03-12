@@ -153,10 +153,6 @@ html, body {
   overflow: hidden; /* Empêche les défilements imprévus */
 }
 
-body {
-  touch-action: manipulation; /* Limite les actions tactiles */
-}
-
 .paw-cursor {
   cursor:url("/assets/paw-cursor.png") 16 16, auto;
 }
