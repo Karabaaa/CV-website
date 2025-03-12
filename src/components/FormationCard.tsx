@@ -36,7 +36,7 @@ export default function FormationCard({
         <h3 className="text-3xl md:text-4xl xl:text-5xl font-1up text-aquamarine mb-4 border-b-2 border-aquamarine pb-2">
           {year}
         </h3>
-        <p className="text-lg md:text-xl xl:text-2xl  font-led text-white mb-2">
+        <p className="text-xl md:text-2xl xl:text-3xl  font-bungee text-white mb-2">
           {diploma}
         </p>
         {major && (
