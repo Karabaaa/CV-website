@@ -1,34 +1,22 @@
 import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { gsap } from "gsap"
+import { useTranslation } from "react-i18next"
 import FormationCard from "../components/FormationCard"
 
-const data = [
-  {
-    year: "2012",
-    diploma: "Baccalauréat scientifique",
-    major: "Mention Bien, Spécialité S",
-    school: "Lycée Descartes, France (78)",
-  },
-  {
-    year: "2016",
-    diploma: "Bachelor of Business Administration",
-    major: "Marketing et Économie appliquée",
-    school: "HEC Montréal, Canada",
-  },
-  {
-    year: "2019",
-    diploma: "Master en Ingénierie Culturelle et Management",
-    school: "ICART, Paris - France",
-  },
-  {
-    year: "2024",
-    diploma: "Formation autodidacte en JS, HTML, CSS, React, TypeScript",
-    school: "YouTube, FreeCodeCamp, LeReacteur",
-  },
-]
+type EducationRecord = {
+  year: string
+  diploma: string
+  major: string
+  school: string
+}
 
 export default function Timeline() {
+  const { t } = useTranslation()
+  const data: EducationRecord[] = t("timeline.data", {
+    returnObjects: true,
+  }) as EducationRecord[]
+
   const [selected, setSelected] = useState<number | null>(null)
   const spaceshipRef = useRef<HTMLDivElement>(null)
   const spaceship2Ref = useRef<HTMLDivElement>(null) // Nouvelle référence pour spaceship2
@@ -110,7 +98,7 @@ export default function Timeline() {
         {/* Contenu de la timeline */}
         <div className="flex flex-col items-center gap-8 w-full">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-starjedi tracking-widest text-center my-16 block ">
-            Formations
+            {t("timeline.title")}
           </h2>
           {/* FormationCard Modal */}
           {selected !== null && (

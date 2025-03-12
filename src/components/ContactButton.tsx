@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { FaPhone, FaHome, FaEnvelope, FaGithub } from "react-icons/fa"
+import { useTranslation } from "react-i18next"
 
 export default function ContactButton() {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useTranslation()
 
   const handleToggle = () => {
     setIsOpen(!isOpen)
@@ -19,7 +21,9 @@ export default function ContactButton() {
         whileTap={{ scale: 0.95 }}
       >
         <span className="absolute inset-0 bg-gradient-to-tl from-pink-500 via-purple-500 to-blue-500 opacity-20 rounded-lg"></span>
-        <span className="relative z-10 font-orbitron">Contactez-moi</span>
+        <span className="relative z-10 font-orbitron">
+          {t("contactButton.buttonText")}
+        </span>
       </motion.button>
 
       {/* Pop-up (carte de visite) */}
@@ -45,7 +49,7 @@ export default function ContactButton() {
                 Amandine Moigno
               </h2>
               <p className="text-lg italic font-orbitron text-gray-400">
-                Développeuse Web
+                {t("contactButton.profession")}
               </p>
             </div>
             <div className="mt-4 space-y-2 text-sm text-center mx-auto">

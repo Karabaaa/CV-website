@@ -1,6 +1,9 @@
 import { FaPhone, FaHome, FaEnvelope, FaGithub } from "react-icons/fa"
+import { useTranslation } from "react-i18next"
 
 export default function Footer() {
+  const { t } = useTranslation()
+  const currentYear = new Date().getFullYear()
   return (
     <footer className="bg-gradient-to-r from-blue-950 to-teal-800   relative text-white font-quicksand text-sm py-6 shadow-[0_-4px_6px_-3px_rgba(0,0,0,0.5)]">
       <div className=" mx-auto text-center">
@@ -40,7 +43,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="mt-10 mb-2 text-icterine text-sm">
-          Site codé par Amandine Moigno © {new Date().getFullYear()}
+          {t("footer.codedBy") + ` © ${currentYear}`}
         </p>
       </div>
     </footer>

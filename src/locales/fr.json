@@ -1,0 +1,210 @@
+{
+  "about": {
+    "title": "À propos de moi",
+    "content": [
+      {
+        "title": "Introduction",
+        "text": "Je m'appelle Amandine, j'ai tout juste 30 ans, et depuis 2024, j’ai entamé une reconversion en tant que développeuse web. Mon parcours atypique m’a menée à explorer divers domaines dans la culture et le cinéma avant de découvrir ma passion pour le web et les nouvelles technologies."
+      },
+      {
+        "title": "Parcours académique",
+        "text": "J’ai obtenu un Bachelor en Business Administration à HEC Montréal en 2016, suivi d’un Master en Ingénierie Culturelle et Management à l’ICART Paris en 2019. Ces formations m’ont permis d’acquérir de solides compétences en gestion de projet et de débuter ma carrière dans l’industrie du cinéma. J’ai travaillé dans des entreprises variées, touchant à la production, l’exploitation de films, les ventes internationales et la location de matériel de tournage."
+      },
+      {
+        "title": "Réinvention professionnelle",
+        "text": "Après avoir exploré l’industrie cinématographique sous divers angles, j’ai ressenti le besoin de me réinventer. Attirée par le monde du web, j’ai décidé d’apprendre à coder en autodidacte tout en m’entourant de développeurs expérimentés. Cette démarche me permet de tirer parti des nombreuses ressources gratuites disponibles en ligne, tout en cultivant ma volonté d'apprendre par moi-même."
+      },
+      {
+        "title": "Objectifs 2025",
+        "text": "2024 a marqué une année de transformation, guidée par la persévérance, la discipline et la régularité. J’ai développé des compétences en JavaScript, HTML, CSS, TypeScript, React, Node.js, Bootstrap, Tailwind, Vite, Stripe, SendGrid, Postman, Cloudinary, MongoDB, Heroku, Figma, Netlify et GitHub. En 2025, mon objectif est de décrocher mon premier contrat en tant que développeuse web. Pour aller plus loin, je me suis également fixé comme défi de courir un marathon le 27 avril et j'ai terminé le semi-marathon de Gand le 9 mars. Déterminée et motivée, je m’engage pleinement à devenir une développeuse web accomplie."
+      }
+    ]
+  },
+    "contact": {
+      "title": "Contactez-moi",
+      "emailLabel": "Votre email",
+      "subjectLabel": "Objet",
+      "messageLabel": "Message",
+      "sendButton": "Envoyer",
+      "emailSent": "Votre message a été envoyé !",
+      "emailError": "Erreur : ",
+      "validationError": "Tous les champs doivent être remplis !",
+      "sendError": "Erreur lors de l'envoi du message."
+    },
+      "experiences": {
+        "title": "Experiences professionnelles",
+        "list": [
+        {
+          "year": "2021-2023",
+          "job": "Chargée de projets",
+          "company": "PANAVISION",
+          "city": "Aubervilliers",
+          "missions": "Communication avec les directeurs de production et équipes techniques. Négociation des devis de location du matériel et saisie dans le CRM. Suivi des projets et de la logistique du matériel en assurant un service client continu.",
+          "image": "/assets/PANAVISION.jpeg"
+        },
+        {
+          "year": "2020-2021",
+          "job": "Chargée de communication",
+          "company": "CINÉMA ELDORADO",
+          "city": "Dijon",
+          "missions": "Community management. Édition du programme des films à l’affiche. Accueil des spectateurs, gestion de la caisse et du lieu de vie. Organisation d’événements (festival Télérama, fête de l’Eldo, séances spéciales).",
+          "image": "/assets/CINEMA-ELDORADO.jpg"
+        },
+        {
+          "year": "2019",
+          "job": "Assistante de production",
+          "company": "UMEDIA",
+          "city": "Bruxelles",
+          "missions": "Constitution de dossiers de financement. Analyse des opportunités de coproduction. Suivi opérationnel des films.",
+          "image": "/assets/UMEDIA.png"
+        },
+        {
+          "year": "2019",
+          "job": "Coordinatrice logistique pour le marché du film du festival de Cannes",
+          "company": "FESTIVAL DE CANNES",
+          "city": "Cannes",
+          "missions": "Accueil des intervenants et coordination des conférences organisées.",
+          "image": "/assets/CANNES.jpg"
+        },
+        {
+          "year": "2018",
+          "job": "Coordinatrice logistique de la Ryder Cup 2018",
+          "company": "RYDER CUP",
+          "city": "Guyancourt",
+          "missions": "Transmission et coordination de l’information entre prestataires et l’organisation. Actions pour la prévention et la protection du public et des employés sur site.",
+          "image": "/assets/RYDER-CUP.jpeg"
+        },
+        {
+          "year": "2018",
+          "job": "Assistante en ventes internationales",
+          "company": "WIDE",
+          "city": "Paris",
+          "missions": "Prospection et soumission de films aux festivals. Négociation des tarifs de projection aux festivals et aux exploitants. Gestion du matériel audiovisuel, press kit, line-up et visuels à envoyer.",
+          "image": "/assets/WIDE.jpg"
+        },
+        {
+          "year": "2016-2017",
+          "job": "Assistante chef de projet événementiel",
+          "company": "XLA VOYAGES",
+          "city": "Boulogne-Billancourt",
+          "missions": "Conception, organisation et suivi de projets événementiels. Prospection, contact et négociation avec les prestataires.",
+          "image": "/assets/XLA.jpg"
+        }
+      ]       
+    },   "footer": {
+      "codedBy": "Site codé par Amandine Moigno"
+    },
+      "funfacts": {
+        "title": "Fun Facts",
+        "spin_button": "Tournez la roue !",
+        "categories": {
+          "travel": "Voyage",
+          "sports": "Sport",
+          "literature": "Littérature",
+          "cinema": "Cinéma",
+          "music": "Musique"
+        },
+        "facts": {
+          "travel": [
+            "J'ai fait le tour du globe en partant à l'Ouest, plus pratique pour le décalage horaire !",
+            "J'ai été fille au pair à Florence.",
+            "J'ai fait un stage de permaculture en Grèce.",
+            "Je suis partie à 14 ans au Canada pour apprendre l'anglais en échange linguistique et je suis repartie à 17 ans pour y étudier.",
+            "J'adore l'art de vivre à la japonaise.",
+            "Je suis tombée malade au Liban car la nourriture était trop bonne, j'ai pas su me retenir."
+          ],
+          "sports": [
+            "J'ai appris à surfer et j'ai décroché mon niveau 1 de plongée à Tahiti.",
+            "Je me suis inscrite pour courir un marathon fin avril !",
+            "J'ai suivi des cours de tennis pendant 9 ans.",
+            "Je suis tombée en amour de l'escrime lors de mon échange universitaire à Lancaster en Angleterre."
+          ],
+          "literature": [
+            "Mon auteur préféré : Romain Gary.",
+            "La BD qui a bercée ma jeunesse : 'Lanfeust de Troy'.",
+            "J'adore la science-fiction : j'ai lu le 'Cycle des robots' et 'Fondation' d'Isaac Asimov ainsi que la trilogie 'Dune' de Frank Herbert.",
+            "Un de mes romans préférés est 'Giovanni's Room' de James Baldwin."
+          ],
+          "cinema": [
+            "Quand j'étais petite, j'étais fan d'Audrey Hepburn et j'adorais regarder les films de Hitchcock.",
+            "Trois films qui m'ont marquée : 'Pororoca', 'So Long, My Son' et 'Un Grand Voyage vers la Nuit'.",
+            "Je suis fan de Denis Villeneuve pour son génie du grandiose.",
+            "J'adore Stanley Kubrick pour sa mise en scène.",
+            "Je suis fan de Paolo Sorrentino et Eric Rohmer pour leurs réflexions existentielles.",
+            "J'adore le cinéma de Yorgos Lanthimos et Ruben Östlund pour ce qu'il révèle sur les paradoxes et la noirceur de l'humain.",
+            "J'aime Ken Loach pour son humanisme.",
+            "Je suis tombée amoureuse du cinéma contemplatif de Kiarostami."
+          ],
+          "music": [
+            "Grâce au COVID, j'ai commencé à jouer du piano.",
+            "Je suis allée voir Charlotte Cardin et James Blake en concert dernièrement.",
+            "Mon dernier coup de coeur musical : le groupe allemand 'Oehl'."
+          ]
+        }
+      }, "navbar": {
+        "about": "À propos",
+        "formations": "Formations",
+        "experiences": "Expériences",
+        "skills": "Compétences"
+      }, "portfolio": {
+        "alt1": "Première capture d'écran","alt2": "Deuxième capture d'écran","alt3": "Troisième capture d'écran",
+        "caption1": "Modale connexion requise",
+        "caption2": "Bas de page, page 3",
+        "caption3": "Page d'accueil",
+        "projectDescription": "Voici un projet de réplique de LeBonCoin sur lequel j'ai travaillé deux mois en utilisant les technologies suivantes : React, Javascript, HTML, CSS, Bootstrap pour le rendre mobile responsive, Heroku pour mon serveur, Netlify pour le déploiement du site, MongoDB pour ma base de données, Cloudinary pour stocker les images, SendGrid pour l'envoi automatique d'email, Github pour la sauvegarde de mon code, Cohere AI pour mon chatbot, Stripe pour le paiement en ligne et Postman pour tester les routes backend.",
+        "clickHere": "Cliquez ici : ",
+        "linkText": "Réplique LeBonCoin"
+      }, "skills": {
+            "human": {
+              "category": "Compétences Humaines",
+              "skillsList": [
+                "Anglais bilingue",
+                "Esprit d'équipe",
+                "Relationnel",
+                "Communication",
+                "Empathique"
+              ]
+            },
+            "organizational": {
+              "category": "Compétences Organisationnelles",
+              "skillsList": [
+                "Adaptabilité",
+                "Fiable",
+                "Responsable",
+                "Organisée",
+                "Apprends vite",
+                "Sens analytique",
+                "Sens du détail"
+              ]
+          },
+          "title": "Mes Compétences"
+        
+      }, "timeline": {
+    "title": "Formations",
+    "data": [
+      {
+        "year": "2012",
+        "diploma": "Baccalauréat scientifique",
+        "major": "Mention Bien, Spécialité S",
+        "school": "Lycée Descartes, France (78)"
+      },
+      {
+        "year": "2016",
+        "diploma": "Bachelor of Business Administration",
+        "major": "Marketing et Économie appliquée",
+        "school": "HEC Montréal, Canada"
+      },
+      {
+        "year": "2019",
+        "diploma": "Master en Ingénierie Culturelle et Management",
+        "school": "ICART, Paris - France"
+      },
+      {
+        "year": "2024",
+        "diploma": "Formation autodidacte en JS, HTML, CSS, React, TypeScript",
+        "school": "YouTube, FreeCodeCamp, LeReacteur"
+      }
+    ]
+  }, "contactButton": {"buttonText": "Contactez-moi",  "profession": "Développeuse Web"
+}
+}

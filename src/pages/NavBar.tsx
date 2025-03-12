@@ -1,15 +1,18 @@
 import { useState } from "react"
 import { FiMenu, FiX } from "react-icons/fi"
 import ContactButton from "../components/ContactButton"
+import LanguageSwitcher from "../components/LanguageSwitcher"
+import { useTranslation } from "react-i18next"
 
 export default function NavBar() {
+  const { t } = useTranslation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
-    { name: "À propos", href: "#about" },
-    { name: "Formations", href: "#formations" },
-    { name: "Expériences", href: "#experiences" },
-    { name: "Compétences", href: "#competences" },
+    { name: t("navbar.about"), href: "#about" },
+    { name: t("navbar.formations"), href: "#formations" },
+    { name: t("navbar.experiences"), href: "#experiences" },
+    { name: t("navbar.skills"), href: "#competences" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Fun Facts", href: "#funfacts" },
     { name: "Contact", href: "#contact" },
@@ -48,6 +51,9 @@ export default function NavBar() {
 
         <div className="hidden sm:flex sm:items-center sm:justify-center">
           <ContactButton />
+        </div>
+        <div className="flex items-center justify-center">
+          <LanguageSwitcher />
         </div>
       </div>
 

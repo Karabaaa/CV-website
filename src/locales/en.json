@@ -1,0 +1,209 @@
+{
+  "about": {
+    "title": "About Me",
+    "content": [
+      {
+        "title": "Introduction",
+        "text": "My name is Amandine, I'm 30 years old, and since 2024, I have been transitioning into a career as a web developer. My unconventional journey led me to explore various fields in culture and cinema before discovering my passion for the web and new technologies."
+      },
+      {
+        "title": "Academic Background",
+        "text": "I hold a Bachelor’s degree in Business Administration from HEC Montreal (2016) and a Master’s degree in Cultural Engineering and Management from ICART Paris (2019). These programs provided me with strong project management skills and allowed me to start my career in the film industry. I worked in various companies, covering production, film distribution, international sales, and the rental of filming equipment."
+      },
+      {
+        "title": "Career Rebirth",
+        "text": "After exploring the film industry from various perspectives, I felt the need for a change. Drawn to the world of the web, I decided to learn coding as a self-taught developer while being supported with experienced professionals. This approach enables me to take full advantage of free online resources while fostering my ability to learn independently."
+      },
+      {
+        "title": "Goals for 2025",
+        "text": "2024 was a pivotal year, driven by perseverance, discipline, and consistency. I developed skills in JavaScript, HTML, CSS, TypeScript, React, Node.js, Bootstrap, Tailwind, Vite, Stripe, SendGrid, Postman, Cloudinary, MongoDB, Heroku, Figma, Netlify, and GitHub. In 2025, my goal is to secure my first web developer contract. Additionally, I challenged myself to run a marathon on April 27th and completed a half marathon in Ghent on March 9th.Determined and motivated, I am fully committed to becoming a skilled web developer."
+      }
+    ]
+  },
+    "contact": {
+      "title": "Contact Me",
+      "emailLabel": "Your email",
+      "subjectLabel": "Subject",
+      "messageLabel": "Message",
+      "sendButton": "Send",
+      "emailSent": "Your message has been sent!",
+      "emailError": "Error: ",
+      "validationError": "All fields must be filled!",
+      "sendError": "Error while sending the message."
+  },
+    "experiences": {  "title": "Professional Experiences",
+    "list": [
+      {
+        "year": "2021-2023",
+        "job": "Project Manager",
+        "company": "PANAVISION",
+        "city": "Aubervilliers",
+        "missions": "Communication with production directors and technical teams. Negotiation of equipment rental quotes and input into CRM. Follow-up on projects and logistics while ensuring continuous customer service.",
+        "image": "/assets/PANAVISION.jpeg"
+      },
+      {
+        "year": "2020-2021",
+        "job": "Communications Officer",
+        "company": "CINÉMA ELDORADO",
+        "city": "Dijon",
+        "missions": "Community management. Editing the program of films on display. Welcoming spectators, managing the box office, and the venue. Organizing events (Télérama festival, Eldo party, special screenings).",
+        "image": "/assets/CINEMA-ELDORADO.jpg"
+      },
+      {
+        "year": "2019",
+        "job": "Production Assistant",
+        "company": "UMEDIA",
+        "city": "Brussels",
+        "missions": "Preparation of financing files. Analysis of co-production opportunities. Operational follow-up of films.",
+        "image": "/assets/UMEDIA.png"
+      },
+      {
+        "year": "2019",
+        "job": "Logistics Coordinator for the Cannes Film Market",
+        "company": "CANNES FILM FESTIVAL",
+        "city": "Cannes",
+        "missions": "Welcoming participants and coordinating the organized conferences.",
+        "image": "/assets/CANNES.jpg"
+      },
+      {
+        "year": "2018",
+        "job": "Logistics Coordinator for the Ryder Cup 2018",
+        "company": "RYDER CUP",
+        "city": "Guyancourt",
+        "missions": "Transmission and coordination of information between service providers and the organization. Actions for the prevention and protection of the public and employees on-site.",
+        "image": "/assets/RYDER-CUP.jpeg"
+      },
+      {
+        "year": "2018",
+        "job": "International Sales Assistant",
+        "company": "WIDE",
+        "city": "Paris",
+        "missions": "Prospecting and submitting films to festivals. Negotiating projection rates with festivals and exhibitors. Managing audiovisual materials, press kits, line-ups, and visuals to be sent.",
+        "image": "/assets/WIDE.jpg"
+      },
+      {
+        "year": "2016-2017",
+        "job": "Event Project Assistant",
+        "company": "XLA VOYAGES",
+        "city": "Boulogne-Billancourt",
+        "missions": "Designing, organizing, and following up on event projects. Prospecting, contacting, and negotiating with service providers.",
+        "image": "/assets/XLA.jpg"
+      }
+    ]
+    },  "footer": {
+      "codedBy": "Site coded by Amandine Moigno"
+    }, 
+      "funfacts": {
+        "title": "Fun Facts",
+        "spin_button": "Spin the wheel !",
+        "categories": {
+          "travel": "Travel",
+          "sports": "Sports",
+          "literature": "Literature",
+          "cinema": "Cinema",
+          "music": "Music"
+        },
+        "facts": {
+          "travel": [
+            "I traveled around the globe heading west, which is easier for the time zones!",
+            "I worked as an au pair in Florence.",
+            "I did a permaculture internship in Greece.",
+            "I went to Canada at 14 for a linguistic exchange and returned at 17 to study.",
+            "I love the Japanese way of life.",
+            "I got sick in Lebanon because the food was so good, I couldn't hold back."
+          ],
+          "sports": [
+            "I learned to surf and got my diving level 1 in Tahiti.",
+            "I signed up to run a marathon at the end of April!",
+            "I took tennis lessons for 9 years.",
+            "I fell in love with fencing during my university exchange in Lancaster, England."
+          ],
+          "literature": [
+            "My favorite author: Romain Gary.",
+            "The comic book of my youth: 'Lanfeust of Troy'.",
+            "I love science fiction; I've read Isaac Asimov's 'Robot Series' and 'Foundation' and Frank Herbert's 'Dune' trilogy.",
+            "One of my favorite novels is 'Giovanni's Room' by James Baldwin."
+          ],
+          "cinema": [
+            "As a child, I was a fan of Audrey Hepburn and loved watching Hitchcock films.",
+            "Three movies that marked me: 'Pororoca', 'So Long, My Son', and 'Long Day's Journey into Night'.",
+            "I'm a fan of Denis Villeneuve for his grandiosity.",
+            "I admire Stanley Kubrick for his staging.",
+            "I love Paolo Sorrentino and Eric Rohmer for their existential reflections.",
+            "I adore Yorgos Lanthimos and Ruben Östlund for their exploration of human paradoxes and darkness.",
+            "Ken Loach fascinates me with his humanism.",
+            "I fell in love with Abbas Kiarostami's contemplative cinema."
+          ],
+          "music": [
+            "Thanks to COVID, I started playing piano.",
+            "I recently attended concerts by Charlotte Cardin and James Blake.",
+            "My latest musical crush: the German band 'Oehl'."
+          ]
+        }
+      }, "navbar": {
+        "about": "About me",
+        "formations": "Education",
+        "experiences": "Experiences",
+        "skills": "Skills"
+      }, "portfolio": {
+        "alt1": "First screenshot",
+        "alt2": "Second screenshot",
+        "alt3": "Third screenshot","caption1": "Login modal required",
+        "caption2": "Bottom of the page, page 3",
+        "caption3": "Home page",
+        "projectDescription": "This is a LeBonCoin French marketplace replica project that I worked on over two months. It was built using the following technologies: React, JavaScript, HTML, CSS, and Bootstrap for mobile responsiveness; Heroku for the server; Netlify for deployment; MongoDB for the database; Cloudinary for image storage; SendGrid for automated email delivery; GitHub for code management; Cohere AI for the chatbot; Stripe for online payments; and Postman for backend route testing.",
+        "clickHere": "Click here: ",
+        "linkText": "LeBonCoin Replica"
+      },
+        "skills": {
+          "human": {
+            "skillsList": [
+              "Bilingual English",
+              "Team Spirit",
+              "Interpersonal",
+              "Communication",
+              "Empathy"
+            ]
+          },
+          "organizational": {
+            "skillsList": [
+              "Adaptability",
+              "Reliable",
+              "Responsible",
+              "Organized",
+              "Fast Learner",
+              "Analytical mind",
+              "Eye for detail"
+            ]
+          },
+        "title": "My Skills"
+      }, "timeline": {
+    "title": "Education",
+    "data": [
+      {
+        "year": "2012",
+        "diploma": "Scientific Baccalaureate",
+        "major": "Honors, Specialization S",
+        "school": "Descartes High School, France (78)"
+      },
+      {
+        "year": "2016",
+        "diploma": "Bachelor of Business Administration",
+        "major": "Marketing and Applied Economics",
+        "school": "HEC Montreal, Canada"
+      },
+      {
+        "year": "2019",
+        "diploma": "Master in Cultural Engineering and Management",
+        "school": "ICART, Paris - France"
+      },
+      {
+        "year": "2024",
+        "diploma": "Self-taught training in JS, HTML, CSS, React, TypeScript",
+        "school": "YouTube, FreeCodeCamp, LeReacteur"
+      }
+    ]
+  }, "contactButton": {"buttonText": "Contact Me", "profession": "Web Developer"
+  }        
+    
+}

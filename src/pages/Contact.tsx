@@ -1,8 +1,10 @@
 import { useState, ChangeEvent, FormEvent, useRef, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 import { motion } from "framer-motion"
 import { gsap } from "gsap"
 
 export default function Contact() {
+  const { t } = useTranslation() // Hook pour récupérer les traductions
   const [formData, setFormData] = useState<{
     email: string
     subject: string
@@ -64,14 +66,14 @@ export default function Contact() {
       const data = await response.json()
 
       if (response.ok) {
-        alert("Votre message a été envoyé !")
+        alert(t("contact.emailSent"))
         setFormData({ email: "", subject: "", message: "" }) // Réinitialiser le formulaire
       } else {
-        alert(`Erreur : ${data.error}`)
+        alert(`${t("contact.emailError")} ${data.error}`)
       }
     } catch (error) {
-      console.error("Erreur lors de l'envoi :", error)
-      alert("Erreur lors de l'envoi du message.")
+      console.error(t("contact.sendError"), error)
+      alert(t("contact.sendError"))
     }
   }
 
@@ -79,7 +81,7 @@ export default function Contact() {
     <section id="contact" className="p-10 pb-0">
       <div className="background-container"></div>
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-space-time-regular tracking-wider text-center my-16 block">
-        Contactez-moi
+        {t("contact.title")}
       </h2>
       <form
         onSubmit={handleSubmit}
@@ -91,7 +93,7 @@ export default function Contact() {
             htmlFor="email"
             className="block text-aquamarine font-bold font-orbitron mb-2"
           >
-            Votre email
+            {t("contact.emailLabel")}
           </label>
           <input
             type="email"
@@ -108,7 +110,7 @@ export default function Contact() {
             htmlFor="subject"
             className="block text-aquamarine font-bold font-orbitron mb-2"
           >
-            Objet
+            {t("contact.subjectLabel")}
           </label>
           <input
             type="text"
@@ -125,7 +127,7 @@ export default function Contact() {
             htmlFor="message"
             className="block text-aquamarine font-bold font-orbitron mb-2"
           >
-            Message
+            {t("contact.messageLabel")}
           </label>
           <textarea
             id="message"
@@ -145,7 +147,9 @@ export default function Contact() {
             whileTap={{ scale: 0.95 }}
           >
             <span className="absolute inset-0 bg-gradient-to-tl from-pink-500 via-purple-500 to-blue-500 opacity-20 rounded-lg"></span>
-            <span className="relative z-10 font-orbitron">Envoyer</span>
+            <span className="relative z-10 font-orbitron">
+              {t("contact.sendButton")}
+            </span>
           </motion.button>
         </div>
       </form>

@@ -1,87 +1,41 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import ExperienceCard from "../components/ExperienceCard"
 
-const data = [
-  {
-    year: "2021-2023",
-    job: "Chargée de projets",
-    company: "PANAVISION",
-    city: "Aubervilliers",
-    missions:
-      "Communication avec les directeurs de production et équipes techniques. Négociation des devis de location du matériel et saisie dans le CRM. Suivi des projets et de la logistique du matériel en assurant un service client continu.",
-    image: `/assets/PANAVISION.jpeg`,
-  },
-  {
-    year: "2020-2021",
-    job: "Chargée de communication",
-    company: "CINÉMA ELDORADO",
-    city: "Dijon",
-    missions: `Community management. Édition du programme des films à l’affiche. Accueil des spectateurs, gestion de la caisse et du lieu de vie. Organisation d’événements (festival Télérama, fête de l’Eldo, séances spéciales).`,
-    image: `/assets/CINEMA-ELDORADO.jpg`,
-  },
-  {
-    year: "2019",
-    job: "Assistante de production",
-    company: "UMEDIA",
-    city: "Bruxelles",
-    missions:
-      "Constitution de dossiers de financement. Analyse des opportunités de coproduction. Suivi opérationnel des films.",
-    image: `/assets/UMEDIA.png`,
-  },
-  {
-    year: "2019",
-    job: "Coordinatrice logistique pour le marché du film du festival de Cannes",
-    company: "FESTIVAL DE CANNES",
-    city: "Cannes",
-    missions:
-      "Accueil des intervenants et coordination des conférences organisées.",
-    image: `/assets/CANNES.jpg`,
-  },
-  {
-    year: "2018",
-    job: "Coordinatrice logistique de la Ryder Cup 2018",
-    company: "RYDER CUP",
-    city: "Guyancourt",
-    missions: `Transmission et coordination de l’information entre prestataires et l’organisation. Actions pour la prévention et la protection du public et des employés sur site.`,
-    image: `/assets/RYDER-CUP.jpeg`,
-  },
-  {
-    year: "2018",
-    job: "Assistante en ventes internationales",
-    company: "WIDE",
-    city: "Paris",
-    missions:
-      "Prospection et soumission de films aux festivals. Négociation des tarifs de projection aux festivals et aux exploitants. Gestion du matériel audiovisuel, press kit, line-up et visuels à envoyer.",
-    image: `/assets/WIDE.jpg`,
-  },
-  {
-    year: "2016-2017",
-    job: "Assistante chef de projet événementiel",
-    company: "XLA VOYAGES",
-    city: "Boulogne-Billancourt",
-    missions:
-      "Conception, organisation et suivi de projets événementiels. Prospection, contact et négociation avec les prestataires.",
-    image: `/assets/XLA.jpg`,
-  },
-]
+// Définition du type pour les données d'une expérience
+interface Experience {
+  year: string
+  job: string
+  company: string
+  city: string
+  missions: string
+  image: string
+}
 
 export default function Experiences() {
+  const { t } = useTranslation()
+  // Le type de `data` est défini comme un tableau d'objets `Experience`
+  const data: Experience[] = t("experiences.list", {
+    returnObjects: true,
+  }) as Experience[]
+  const title: string = t("experiences.title") // Titre de la section
+
   const [selected, setSelected] = useState<number | null>(null)
 
   return (
     <section id="experiences" className="bg-gray-100 p-10">
       <h2 className="text-2xl sm:text-4xl md:text-5xl  text-african-violet font-space-time-regular tracking-wider text-center my-8 sm:my-16 ">
-        Experiences professionnelles
+        {title}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {data.map((_, index) => (
+        {data.map((experience, index: number) => (
           <div
             key={index}
             className="relative aspect-square rounded-lg overflow-hidden cursor-pointer shadow-md hover:shadow-lg transition"
           >
             <img
-              src={data[index].image}
-              alt={data[index].company}
+              src={experience.image}
+              alt={experience.company}
               className="w-full h-full object-cover"
               onClick={() => setSelected(index)}
             />

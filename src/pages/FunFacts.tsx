@@ -1,61 +1,34 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-
-// Liste des fun facts
-const funFactsList = [
-  {
-    category: "Voyage",
-    funFact: [
-      "J'ai fait le tour du globe en partant à l'Ouest, plus pratique pour le décalage horaire !",
-      "J'ai été fille au pair à Florence.",
-      "J'ai fait un stage de permaculture en Grèce.",
-      "Je suis partie à 14 ans au Canada pour apprendre l'anglais en échange linguistique et je suis repartie à 17 ans pour y étudier.",
-      "J'adore l'art de vivre à la japonaise.",
-      "Je suis tombée malade au Liban car la nourriture était trop bonne, j'ai pas su me retenir.",
-    ],
-  },
-  {
-    category: "Sport",
-    funFact: [
-      "J'ai appris à surfer et j'ai décroché mon niveau 1 de plongée à Tahiti.",
-      "Je me suis inscrite pour courir un marathon fin avril !",
-      "J'ai suivi des cours de tennis pendant 9 ans.",
-      "Je suis tombée en amour de l'escrime lors de mon échange universitaire à Lancaster en Angleterre.",
-    ],
-  },
-  {
-    category: "Littérature",
-    funFact: [
-      "Mon auteur préféré : Romain Gary",
-      `La BD qui a bercée ma jeunesse : "Lanfeust de Troy"`,
-      `J'adore la science-fiction, j'ai lu notamment le "Cycle des robots" et "Fondation" de Isaac Asimov et j'ai lu la trilogie "Dune" de Frank Herbert`,
-      `Un de mes romans préférés est "Giovanni's room" de James Baldwin.`,
-    ],
-  },
-  {
-    category: "Cinéma",
-    funFact: [
-      "Quand j'étais petite j'étais fan de Audrey Hepburn et j'adorais regarder les films de Hitchcock.",
-      `Trois films qui m'ont marquées : "Pororoca" de Constantin Popescu, "So long, my son" de Wang Xiaoshuai et "Un grand voyage vers la nuit" de Bi Gan `,
-      "Je suis fan de Denis Villeneuve pour son génie du grandiose.",
-      "Je suis fan de Stanley Kubrick pour sa mise en scène.",
-      "Je suis fan de Paolo Sorrentino et de Eric Rhomer pour leurs réflexions existentielles.",
-      "J'adore le cinéma de Yorgos Lanthimos et de Ruben Östlund pour ce qu'il révèle sur les paradoxes et la noirceur de l'humain.",
-      "J'adore Ken Loach pour son humanisme.",
-      "Je suis tombée amoureuse du cinéma contemplatif de Kiarostami.",
-    ],
-  },
-  {
-    category: "Musique",
-    funFact: [
-      "Grâce au covid, j'ai commencé à jouer du piano.",
-      "Je suis allée voir Charlotte Cardin et James Blake en concert dernièrement.",
-      `Mon dernier coup de coeur musical, le groupe allemand "Oehl".`,
-    ],
-  },
-]
+import { useTranslation } from "react-i18next"
 
 const FunFacts = () => {
+  const { t } = useTranslation()
+  const funFactsList: { category: string; funFact: string[] }[] = [
+    {
+      category: t("funfacts.categories.travel"),
+      funFact: t("funfacts.facts.travel", { returnObjects: true }) as string[],
+    },
+    {
+      category: t("funfacts.categories.sports"),
+      funFact: t("funfacts.facts.sports", { returnObjects: true }) as string[],
+    },
+    {
+      category: t("funfacts.categories.literature"),
+      funFact: t("funfacts.facts.literature", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      category: t("funfacts.categories.cinema"),
+      funFact: t("funfacts.facts.cinema", { returnObjects: true }) as string[],
+    },
+    {
+      category: t("funfacts.categories.music"),
+      funFact: t("funfacts.facts.music", { returnObjects: true }) as string[],
+    },
+  ]
+
   const [selectedFunFact, setSelectedFunFact] = useState<{
     category: string
     funFact: string[]
@@ -116,7 +89,7 @@ const FunFacts = () => {
     >
       <div className="background-container"></div>
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
-        Fun facts
+        {t("funfacts.title")}
       </h2>
       {/* Bouton pour tourner */}
       <motion.button
@@ -126,7 +99,9 @@ const FunFacts = () => {
         whileHover={{ scale: 1.1 }}
       >
         <span className="absolute inset-0 border-4 border-white rounded-full animate-pulse"></span>
-        <span className="relative z-10 font-oswald">Tournez la roue !</span>
+        <span className="relative z-10 font-oswald">
+          {t("funfacts.spin_button")}
+        </span>
       </motion.button>
       <div className="relative w-[80vw] h-[80vw] sm:w-[60vw] sm:h-[60vw] lg:w-[40vw] lg:h-[40vw] mx-auto ">
         {/* Curseur fixe */}

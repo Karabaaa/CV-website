@@ -1,25 +1,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import ContactButton from "../components/ContactButton"
-
-const content = [
-  {
-    title: "Introduction",
-    text: "Je m'appelle Amandine, j'ai tout juste 30 ans, et depuis 2024, j’ai entamé une reconversion en tant que développeuse web. Mon parcours atypique m’a menée à explorer divers domaines dans la culture et le cinéma avant de découvrir ma passion pour le web et les nouvelles technologies.",
-  },
-  {
-    title: "Parcours académique",
-    text: "J’ai obtenu un Bachelor en Business Administration à HEC Montréal en 2016, suivi d’un Master en Ingénierie Culturelle et Management à l’ICART Paris en 2019. Ces formations m’ont permis d’acquérir de solides compétences en gestion de projet et de débuter ma carrière dans l’industrie du cinéma. J’ai travaillé dans des entreprises variées, touchant à la production, l’exploitation de films, les ventes internationales et la location de matériel de tournage.",
-  },
-  {
-    title: "Réinvention professionnelle",
-    text: "Après avoir exploré l’industrie cinématographique sous divers angles, j’ai ressenti le besoin de me réinventer. Attirée par le monde du web, j’ai décidé d’apprendre à coder en autodidacte tout en m’entourant de développeurs expérimentés. Cette démarche me permet de tirer parti des nombreuses ressources gratuites disponibles en ligne, tout en cultivant ma volonté d'apprendre par moi-même.",
-  },
-  {
-    title: "Objectifs 2025",
-    text: "2024 a marqué une année de transformation, guidée par la persévérance, la discipline et la régularité. J’ai développé des compétences en JavaScript, HTML, CSS, TypeScript, React, Node.js, Bootstrap, Tailwind, Vite, Stripe, SendGrid, Postman, Cloudinary, MongoDB, Heroku, Figma, Netlify et GitHub. En 2025, mon objectif est de décrocher mon premier contrat en tant que développeuse web. Pour aller plus loin, je me suis également lancé le défi de courir un marathon en avril. Déterminée et motivée, je m’engage pleinement à devenir une développeuse web accomplie.",
-  },
-]
+import { useTranslation } from "react-i18next"
 
 const colors = [
   "bg-gradient-to-t from-gray-900/50 via-cyan-900 to-cyan-800", // Carré 1
@@ -32,6 +14,9 @@ const colors = [
 ]
 
 export default function About() {
+  const { t } = useTranslation()
+  const content = t("about.content", { returnObjects: true }) as any[] // Retourne un tableau d'objets
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const handleToggle = (index: number): void => {
@@ -47,7 +32,7 @@ export default function About() {
       transition={{ duration: 0.8 }}
     >
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
-        À propos de moi
+        {t("about.title")}
       </h2>
       <div className=" px-6 pb-12 flex items-center justify-center sm:hidden ">
         <ContactButton />
