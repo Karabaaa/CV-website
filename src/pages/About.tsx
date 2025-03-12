@@ -34,7 +34,7 @@ export default function About() {
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-starjedi tracking-wider text-center my-16 block">
         {t("about.title")}
       </h2>
-      <div className=" px-6 pb-12 flex items-center justify-center sm:hidden ">
+      <div className=" px-6 pb-12 flex items-center justify-center md:hidden ">
         <ContactButton />
       </div>
       <div

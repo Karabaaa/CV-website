@@ -40,7 +40,7 @@ export default function NavBar() {
               Web developer
             </h2>
           </div>
-          <span>
+          <span className="hidden sm:block">
             <img
               src="/assets/cat-astronaut-1.png"
               alt="cat astronaut"
@@ -49,7 +49,7 @@ export default function NavBar() {
           </span>
         </div>
 
-        <div className="hidden sm:flex sm:items-center sm:justify-center">
+        <div className="hidden md:flex md:items-center md:justify-center">
           <ContactButton />
         </div>
         <div className="flex items-center justify-center">
