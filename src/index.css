@@ -183,8 +183,8 @@
   animation: bgAnimation 60s infinite linear;
   top: 0;
   left: 0;
-  width: 100dvw;
-  height:100dvh;
+  width: 100vw;
+  height:100vh;
   z-index: -1; /* Fond sous les planètes */
 }
 
